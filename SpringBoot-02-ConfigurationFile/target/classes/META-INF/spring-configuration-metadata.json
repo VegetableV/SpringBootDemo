@@ -2,15 +2,30 @@
   "groups": [
     {
       "name": "food",
-      "type": "com.hxy.domain.Food",
-      "sourceType": "com.hxy.domain.Food"
+      "type": "com.hxy.config.FoodConifg",
+      "sourceType": "com.hxy.config.FoodConifg"
+    },
+    {
+      "name": "student",
+      "type": "com.hxy.config.StudentConfig",
+      "sourceType": "com.hxy.config.StudentConfig"
     }
   ],
   "properties": [
     {
       "name": "food.rice",
       "type": "java.lang.String",
-      "sourceType": "com.hxy.domain.Food"
+      "sourceType": "com.hxy.config.FoodConifg"
+    },
+    {
+      "name": "student.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.hxy.config.StudentConfig"
+    },
+    {
+      "name": "student.name",
+      "type": "java.lang.String",
+      "sourceType": "com.hxy.config.StudentConfig"
     }
   ],
   "hints": []
