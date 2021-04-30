@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "food",
+      "type": "com.hxy.domain.Food",
+      "sourceType": "com.hxy.domain.Food"
+    }
+  ],
+  "properties": [
+    {
+      "name": "food.rice",
+      "type": "java.lang.String",
+      "sourceType": "com.hxy.domain.Food"
+    }
+  ],
+  "hints": []
+}

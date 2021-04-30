@@ -1,17 +1,14 @@
 package com.hxy.domain;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
 @ConfigurationProperties(prefix = "food")
+@Getter
+@Setter
 public class Food {
     private String rice;
 
-    public String getRice() {
-        return rice;
-    }
 
-    public void setRice(String rice) {
-        this.rice = rice;
-    }
 }
