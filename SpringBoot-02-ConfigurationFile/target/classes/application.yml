@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+food: { rice: rice}
+
+student:
+  name: 张三
+  age: 19
+  color:
+    - red
+    - green
+    - blue
+    - yellow

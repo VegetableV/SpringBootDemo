@@ -38,6 +38,7 @@ public class TestController {
         Student student1=new Student();
         student1.setName(stu.getName());
         student1.setAge(stu.getAge());
+        student1.setColor(stu.getColor());
         return student1;
     }
 }
