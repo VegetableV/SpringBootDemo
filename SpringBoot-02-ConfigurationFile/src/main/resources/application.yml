@@ -5,6 +5,17 @@
 food:
   rice: rice
 
+jasypt:
+  encryptor:
+    password: 123456
+
+info:
+  username:
+    ENC(jr1Ru2dxhYoTq2+cOWxhCA==)
+  password:
+    ENC(Yl2ya6tx7cuSsZ+Otzf5hw==)
+
+
 student:
   name: 张三
   age: 19

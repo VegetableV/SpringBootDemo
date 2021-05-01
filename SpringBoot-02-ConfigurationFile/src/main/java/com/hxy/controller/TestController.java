@@ -41,4 +41,22 @@ public class TestController {
         student1.setColor(stu.getColor());
         return student1;
     }
+
+    @Value("${info.username}")
+    private String username;
+
+    @Value("${info.password}")
+    private String password;
+
+    @RequestMapping("/jasy")
+    public String jasy(){
+        return username+"         "+password;
+    }
+
+
+
+
+
+
+
 }
