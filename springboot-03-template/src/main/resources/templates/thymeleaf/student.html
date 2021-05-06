@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <p th:text="${student.name}" >name</p>
+    <p th:text="${student.age}" >age</p>
+
+<!--    <p th:text="${(student)context.get}"></p>-->
+    <div th:object="${student}">
+        <p>Name: <span th:text="*{getName()}">name</span>.</p>
+        <p>age: <span th:text="*{age}">age</span>.</p>
+<!--        <p>Nationality: <span th:text="*{nationality}">Saturn</span>.</p> -->
+    </div>
+
+    <a href="index" th:href="@{/index}">view</a>
+
+    <p th:text="#{something}"> message</p>
+
+    <div th:insert="footer :: copy"></div>
+    <div th:replace="footer :: copy"></div>
+    <div th:include="footer :: copy"></div>
+
+    </body>
+</html>
