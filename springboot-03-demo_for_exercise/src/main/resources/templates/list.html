@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+
+
+
+    </head>
+    <body>
+        <table id="tableBox" border="1px">
+            <tr th:each="guest:${guests}">
+                <td th:text="${guest.getUname()}">name</td>
+                <td th:text="${guest.getRole()}">role</td>
+                <td>
+                    <a href="update.html" th:href="@{update(uname=${guest.getUname()})}">更新</a>
+                    <a href="delete.html" th:href="@{delete(uname=${guest.getUname()})}">删除</a>
+                </td>
+            </tr>
+            <tr><td><a href="add.html" th:href="@{add}">add</a> </td></tr>
+
+        </table>
+
+    </body>
+</html>
