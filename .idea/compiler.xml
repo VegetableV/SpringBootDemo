@@ -10,6 +10,7 @@
         <module name="SpringBoot-02-ConfigurationFile" />
         <module name="SpringBoot-01-Hello" />
         <module name="springboot-03-template" />
+        <module name="springboot-03-restful" />
         <module name="springboot-03-demo_for_exercise" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="SpringBoot-01-Hello" target="1.8" />
       <module name="SpringBoot-02-ConfigurationFile" target="1.8" />
       <module name="springboot-03-demo_for_exercise" target="1.8" />
+      <module name="springboot-03-restful" target="1.8" />
       <module name="springboot-03-template" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -25,6 +27,7 @@
       <module name="SpringBoot-01-Hello" options="-parameters" />
       <module name="SpringBoot-02-ConfigurationFile" options="-parameters" />
       <module name="springboot-03-demo_for_exercise" options="-parameters" />
+      <module name="springboot-03-restful" options="-parameters" />
       <module name="springboot-03-template" options="-parameters" />
     </option>
   </component>
