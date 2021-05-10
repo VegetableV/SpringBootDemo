@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script>
+
+
+
+
+    </head>
+    <body>
+        <table id="tableBox" border="1px">
+            <tr th:each="guest:${guests}">
+                <td th:text="${guest.getUname()}">name</td>
+                <td th:text="${guest.getRole()}">role</td>
+                <td>
+                    <a th:href="@{guest/update/}+${guest.getUname()}">更新</a>
+                    <button th:attr="del_url=@{/guest/}+${guest.getUname()}" name="del_button">删除</button>
+                </td>
+            </tr>
+            <tr><td><a href="add.html" th:href="@{guest/add}">add</a> </td></tr>
+
+        </table>
+
+
+        <form method="post" id="del_form">
+            <input type="hidden" name="_method" value="delete">
+        </form>
+
+        <script>
+            $(function () {
+                $("button[name='del_button']").click(function () {
+                    $("#del_form").prop("action",$(this).attr("del_url")).submit();
+                });
+            });
+        </script>
+
+    </body>
+</html>
