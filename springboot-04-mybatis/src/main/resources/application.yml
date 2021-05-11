@@ -8,9 +8,13 @@ spring:
     password: huangxiangyi
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-mybatis:
-  config-location: classpath:mybatis-config.xml
+#mybatis:
+#  mapper-locations: classpath*:/mybatis/mapper/*.xml
+#  type-aliases-package: com.hxy.domain
+#  config-location: classpath:mybatis-config.xml
 
-
+#mybatis:
+#  mapper-locations: classpath*:/mybatis/mapper/*.xml
+#  type-aliases-package: com.duing.model
 
 #spring.datasour ce.driver- c las s -name=com.my sql.jdbc .Driver
