@@ -2,6 +2,7 @@ package com.hxy.service.Imp;
 
 import com.hxy.dao.GuestDao;
 import com.hxy.domain.Guest;
+import com.hxy.mapper.GuestMapper;
 import com.hxy.service.GuestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,10 +16,13 @@ public class GuestServiceImp implements GuestService {
     @Autowired
     private GuestDao dao;
 
+    @Autowired
+    private GuestMapper guestMapper;
+
 
     @Override
     public List<Guest> reList() {
-        return dao.reList();   //返回所有嘉宾的信息
+        return guestMapper.selectAll();   //返回所有嘉宾的信息
     }
 
     @Override
